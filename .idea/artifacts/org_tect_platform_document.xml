@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="org.tect.platform.document">
+    <output-path>$PROJECT_DIR$/out/artifacts/org_tect_platform_document</output-path>
+    <root id="archive" name="org.tect.platform.document.jar">
+      <element id="module-output" name="JsonDocument" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
