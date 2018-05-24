@@ -7,6 +7,8 @@ import org.tect.platform.document.QueryCondition;
 import org.tect.platform.document.hibernate.DbCredentials;
 import org.tect.platform.document.hibernate.DbTarget;
 
+import java.util.List;
+
 public class SaveAndLoadJsonDocument  {
 
     public static void main(String[] args) {
@@ -55,6 +57,7 @@ public class SaveAndLoadJsonDocument  {
         DocumentQuery query = new DocumentQuery()
                 .addCondition(QueryCondition.documentIdIn(document.getPersistedId()));
         JsonDocument read = database.queryUnique(query);
+        List<JsonDocument> reads = database.query(query);
 
         /**
          * Print document read from storage.
